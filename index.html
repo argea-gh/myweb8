@@ -12,104 +12,234 @@
 </head>
 <body>
 
-  <!-- Header dengan sticky cart -->
+  <!-- Header -->
   <header class="header">
     <div class="container">
-      <div class="logo">
-        <h1>Herba<span>Sehat</span></h1>
-      </div>
-      <div class="cart">
-        <a href="#" class="cart-btn">
-          <i class="fas fa-shopping-cart"></i>
-          <span class="cart-count">0</span>
+      <div class="header-left">
+        <a href="#" class="logo">
+          <img src="https://lh3.googleusercontent.com/d/1xp5ce29F3f-nVa_IEx925L-8YrXXbHo6" alt="HerbaSehat Logo" class="logo-img">
+          <h1>Herba<span>Sehat</span></h1>
         </a>
       </div>
-    </div>
-  </header>
 
-  <!-- Hero Section (AIDA) -->
-  <section class="hero">
-    <div class="container">
-      <h1 class="hero-title">Sakit Maag Kronis? <span>Obat Dokter Cuma Redakan — Kami Sembuhkan.</span></h1>
-      <p class="hero-subtitle">Ramuan herbal alami BPOM & Halal MUI. 1.248+ pelanggan sembuh dalam 7–14 hari — tanpa efek samping.</p>
-      <a href="https://wa.me/6281234567890?text=Hai%2C+saya+tertarik+dengan+ramuan+untuk+maag." 
-         class="btn btn-primary btn-wa">
-        <i class="fab fa-whatsapp"></i> Konsultasi GRATIS via WhatsApp
-      </a>
-      
-      <div class="badges">
-        <img src="https://via.placeholder.com/80x40/00AA44/FFFFFF?text=BPOM" alt="BPOM" class="badge">
-        <img src="https://via.placeholder.com/80x40/0077CC/FFFFFF?text=HALAL" alt="Halal MUI" class="badge">
-      </div>
-    </div>
-  </section>
+      <!-- Desktop Menu -->
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="#hero">Beranda</a></li>
+          <li><a href="#products">Produk</a></li>
+          <li><a href="#about">Tentang Kami</a></li>
+          <li><a href="#testimonials">Testimoni</a></li>
+          <li><a href="#contact">Kontak</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
 
-  <!-- StoryBrand Section -->
-  <section class="storybrand">
-    <div class="container">
-      <div class="sb-card">
-        <div class="sb-icon">👤</div>
-        <h3>Untuk Anda yang...</h3>
-        <p>Sudah 2+ tahun sering mual, kembung, dan takut makan nasi atau telur. Bolak-balik ke dokter, tapi gejala tetap kambuh.</p>
+      <!-- Mobile Menu Toggle -->
+      <div class="menu-toggle" id="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-      <div class="sb-card">
-        <div class="sb-icon">🧭</div>
-        <h3>Kami tim HerbaSehat...</h3>
-        <p>Reseller herbal keluarga sejak 2018. Sudah bantu 1.248+ orang sembuh — dengan pendekatan alami, aman, dan terukur.</p>
-      </div>
-      <div class="sb-card">
-        <div class="sb-icon">✅</div>
-        <h3>Caranya sangat mudah:</h3>
-        <ol>
-          <li>Konsultasi GRATIS via WhatsApp</li>
-          <li>Kirim paket ke rumah (COD/tf)</li>
-          <li>Minum rutin 2x sehari — rasakan perubahan dalam 3–7 hari</li>
-        </ol>
-      </div>
-    </div>
-  </section>
 
-  <!-- Produk Unggulan (PAS) -->
-  <section class="products">
-    <div class="container">
-      <h2 class="section-title">Ramuan Andalan Kami</h2>
-
-      <div class="product-card">
-        <div class="product-img">
-          <img src="https://via.placeholder.com/300x200/f5f5f5/333?text=Ramuan+Maag+Alami" alt="Ramuan Maag Herbal">
-        </div>
-        <div class="product-content">
-          <h3 class="product-title">HerbaGastric</h3>
-          <div class="product-pas">
-            <div class="pas-problem">
-              <strong>Masalah:</strong> Perut sering perih, mual setelah makan, takut makan pedas.
-            </div>
-            <div class="pas-agitate">
-              <strong>Jika dibiarkan:</strong> Dinding lambung bisa menipis → tukak → operasi.
-            </div>
-            <div class="pas-solution">
-              <strong>Solusi:</strong> Ekstrak kunyit & madu hutan 8x lebih pekat. Meregenerasi sel lambung dalam 7–14 hari.
-            </div>
-          </div>
-          <div class="product-benefits">
-            <ul>
-              <li>✅ BPOM TR21345678</li>
-              <li>✅ Halal MUI No. 0123456789</li>
-              <li>✅ Tanpa bahan kimia</li>
-              <li>✅ Aman untuk ibu menyusui</li>
-            </ul>
-          </div>
-          <a href="https://wa.me/6281234567890?text=Saya+ingin+pesan+HerbaGastric+untuk+maag." 
-             class="btn btn-secondary">
-            <i class="fas fa-shopping-cart"></i> Pesan Sekarang (Rp145.000)
+      <div class="header-right">
+        <div class="cart">
+          <a href="#" class="cart-btn">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
           </a>
         </div>
       </div>
     </div>
+
+    <!-- Mobile Menu Dropdown -->
+    <div class="mobile-menu" id="mobile-menu">
+      <ul>
+        <li><a href="#hero">Beranda</a></li>
+        <li><a href="#products">Produk</a></li>
+        <li><a href="#about">Tentang Kami</a></li>
+        <li><a href="#testimonials">Testimoni</a></li>
+        <li><a href="#contact">Kontak</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Slider -->
+  <section class="hero-slider" id="hero">
+    <div class="slider-container">
+      <!-- Slide 1 -->
+      <div class="slide active" data-index="0">
+        <img src="https://hni.net/public/front/img/produk/sevel-stamina_11-09-25_.png" alt="Sevel Stamina">
+        <div class="slide-overlay">
+          <div class="container">
+            <h1 class="hero-title">Cepat Lelah & Gampang Sakit?</h1>
+            <p class="hero-subtitle">Sevel Stamina — tingkatkan daya tahan tubuh alami dengan ekstrak meniran & madu. BPOM & Halal.</p>
+            <a href="https://wa.me/6281234567890?text=Saya+mau+coba+Sevel+Stamina+untuk+daya+tahan." class="btn btn-primary">
+              <i class="fab fa-whatsapp"></i> Konsultasi Gratis
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide" data-index="1">
+        <img src="https://hni.net/public/front/img/produk/hni-health-3_18-11-24_.png" alt="HNI Health 3">
+        <div class="slide-overlay">
+          <div class="container">
+            <h1 class="hero-title">Kolesterol & Asam Urat Tinggi?</h1>
+            <p class="hero-subtitle">HNI Health 3 — herbal alami turunkan kadar kolesterol & asam urat dalam 14 hari. Tanpa efek samping.</p>
+            <a href="https://wa.me/6281234567890?text=Saya+mau+coba+HNI+Health+3+untuk+kolesterol." class="btn btn-primary">
+              <i class="fab fa-whatsapp"></i> Konsultasi Gratis
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide" data-index="2">
+        <img src="https://hni.net/public/front/img/produk/gluta2_27-10-22_.png" alt="Gluta 2">
+        <div class="slide-overlay">
+          <div class="container">
+            <h1 class="hero-title">Kulit Kusam & Banyak Flek?</h1>
+            <p class="hero-subtitle">Gluta 2 — pemutih alami dari glutathione & kolagen. Kulit cerah, kenyal, dan sehat dari dalam.</p>
+            <a href="https://wa.me/6281234567890?text=Saya+mau+coba+Gluta+2+untuk+kecantikan+kulit." class="btn btn-primary">
+              <i class="fab fa-whatsapp"></i> Konsultasi Gratis
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="slide" data-index="3">
+        <img src="https://hni.net/public/front/img/produk/SABUN%20KOLAGEN-4_07-01-19_.png" alt="Sabun Kolagen">
+        <div class="slide-overlay">
+          <div class="container">
+            <h1 class="hero-title">Kulit Kering & Cepat Keriput?</h1>
+            <p class="hero-subtitle">Sabun Kolagen — bersihkan wajah sekaligus awet muda. Kolagen aktif + Aloe Vera untuk kulit lembut & kenyal.</p>
+            <a href="https://wa.me/6281234567890?text=Saya+mau+coba+Sabun+Kolagen+HNI." class="btn btn-primary">
+              <i class="fab fa-whatsapp"></i> Konsultasi Gratis
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slider Controls (dots) -->
+    <div class="slider-dots">
+      <span class="dot active" data-slide="0"></span>
+      <span class="dot" data-slide="1"></span>
+      <span class="dot" data-slide="2"></span>
+      <span class="dot" data-slide="3"></span>
+    </div>
+
+    <!-- Badges -->
+    <div class="badges">
+      <img src="https://via.placeholder.com/80x40/00AA44/FFFFFF?text=BPOM" alt="BPOM" class="badge">
+      <img src="https://via.placeholder.com/80x40/0077CC/FFFFFF?text=HALAL" alt="Halal MUI" class="badge">
+    </div>
   </section>
 
-  <!-- Testimoni (BAB) -->
-  <section class="testimonials">
+  <!-- Tentang Kami (baru) -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2 class="section-title">Tentang Kami</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Kami <strong>HerbaSehat</strong> adalah reseller resmi produk herbal HNI HPAI sejak 2020.</p>
+          <p>Misi kami sederhana: <em>membantu keluarga Indonesia hidup sehat secara alami</em>, tanpa ketergantungan obat kimia.</p>
+          <p>Setiap produk yang kami rekomendasikan telah melalui uji klinis, terdaftar BPOM, dan bersertifikat Halal MUI.</p>
+          <a href="#contact" class="btn btn-secondary">Hubungi Kami</a>
+        </div>
+        <div class="about-img">
+          <img src="https://via.placeholder.com/400x300/f1f8f3/333?text=Tim+HerbaSehat" alt="Tim HerbaSehat">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Produk (update anchor ID) -->
+  <section class="products" id="products">
+    <div class="container">
+      <h2 class="section-title">Produk Unggulan Kami</h2>
+
+      <div class="product-grid">
+        <!-- Produk 1 -->
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://hni.net/public/front/img/produk/sevel-stamina_11-09-25_.png" alt="Sevel Stamina">
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Sevel Stamina</h3>
+            <div class="product-pas">
+              <div class="pas-problem"><strong>Masalah:</strong> Gampang lelah, sering sakit, kurang fokus.</div>
+              <div class="pas-agitate"><strong>Dampak:</strong> Produktivitas turun, kualitas hidup menurun.</div>
+              <div class="pas-solution"><strong>Solusi:</strong> Ekstrak meniran & madu hutan — tingkatkan imun & stamina alami.</div>
+            </div>
+            <a href="https://wa.me/6281234567890?text=Saya+mau+pesan+Sevel+Stamina." class="btn btn-secondary">
+              <i class="fas fa-shopping-cart"></i> Pesan (Rp125.000)
+            </a>
+          </div>
+        </div>
+
+        <!-- Produk 2 -->
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://hni.net/public/front/img/produk/hni-health-3_18-11-24_.png" alt="HNI Health 3">
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">HNI Health 3</h3>
+            <div class="product-pas">
+              <div class="pas-problem"><strong>Masalah:</strong> Kolesterol & asam urat tinggi.</div>
+              <div class="pas-agitate"><strong>Dampak:</strong> Risiko jantung, ginjal, dan nyeri sendi.</div>
+              <div class="pas-solution"><strong>Solusi:</strong> Daun sambiloto & temulawak — turunkan kadar dalam 2 minggu.</div>
+            </div>
+            <a href="https://wa.me/6281234567890?text=Saya+mau+pesan+HNI+Health+3." class="btn btn-secondary">
+              <i class="fas fa-shopping-cart"></i> Pesan (Rp135.000)
+            </a>
+          </div>
+        </div>
+
+        <!-- Produk 3 -->
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://hni.net/public/front/img/produk/gluta2_27-10-22_.png" alt="Gluta 2">
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Gluta 2</h3>
+            <div class="product-pas">
+              <div class="pas-problem"><strong>Masalah:</strong> Kulit kusam, flek, penuaan dini.</div>
+              <div class="pas-agitate"><strong>Dampak:</strong> Rendah percaya diri, makeup jadi tebal.</div>
+              <div class="pas-solution"><strong>Solusi:</strong> Glutathione + kolagen — cerahkan & kencangkan kulit dari dalam.</div>
+            </div>
+            <a href="https://wa.me/6281234567890?text=Saya+mau+pesan+Gluta+2." class="btn btn-secondary">
+              <i class="fas fa-shopping-cart"></i> Pesan (Rp155.000)
+            </a>
+          </div>
+        </div>
+
+        <!-- Produk 4 -->
+        <div class="product-card">
+          <div class="product-img">
+            <img src="https://hni.net/public/front/img/produk/SABUN%20KOLAGEN-4_07-01-19_.png" alt="Sabun Kolagen">
+          </div>
+          <div class="product-content">
+            <h3 class="product-title">Sabun Kolagen</h3>
+            <div class="product-pas">
+              <div class="pas-problem"><strong>Masalah:</strong> Kulit kering, keriput, tidak kenyal.</div>
+              <div class="pas-agitate"><strong>Dampak:</strong> Tampak lebih tua dari usia sebenarnya.</div>
+              <div class="pas-solution"><strong>Solusi:</strong> Kolagen aktif + Aloe Vera — lembutkan & awet muda setiap hari.</div>
+            </div>
+            <a href="https://wa.me/6281234567890?text=Saya+mau+pesan+Sabun+Kolagen." class="btn btn-secondary">
+              <i class="fas fa-shopping-cart"></i> Pesan (Rp45.000)
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimoni -->
+  <section class="testimonials" id="testimonials">
     <div class="container">
       <h2 class="section-title">Mereka Sudah Sembuh — Sekarang Giliran Anda</h2>
       <div class="testimonial">
@@ -128,8 +258,8 @@
     </div>
   </section>
 
-  <!-- FAQ Accordion -->
-  <section class="faq">
+  <!-- FAQ -->
+  <section class="faq" id="faq">
     <div class="container">
       <h2 class="section-title">Pertanyaan yang Sering Diajukan</h2>
       <div class="accordion">
@@ -169,6 +299,18 @@
             <p>Ya. Jika tidak ada perubahan dalam 7 hari, kami kembalikan 100% uang Anda.</p>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">Kontak Kami</h2>
+      <div class="contact-info">
+        <p><i class="fas fa-phone"></i> 0812-3456-7890</p>
+        <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/6281234567890">Chat via WhatsApp</a></p>
+        <p><i class="fas fa-map-marker-alt"></i> Bandung, Jawa Barat</p>
       </div>
     </div>
   </section>
